@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterminabs
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Compute the minimum absolute value of all [iterated][mdn-iterator-protocol] values.
 
@@ -124,9 +124,9 @@ console.log( 'minabs: %d.', m );
 
 ## See Also
 
--   [`@stdlib/stats/iter/maxabs`][@stdlib/stats/iter/maxabs]: compute the maximum absolute value of all iterated values.
--   [`@stdlib/stats/iter/min`][@stdlib/stats/iter/min]: compute the minimum value of all iterated values.
--   [`@stdlib/stats/iter/mminabs`][@stdlib/stats/iter/mminabs]: create an iterator which iteratively computes a moving minimum absolute value.
+-   <span class="package-name">[`@stdlib/stats/iter/maxabs`][@stdlib/stats/iter/maxabs]</span><span class="delimiter">: </span><span class="description">compute the maximum absolute value of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/min`][@stdlib/stats/iter/min]</span><span class="delimiter">: </span><span class="description">compute the minimum value of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mminabs`][@stdlib/stats/iter/mminabs]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving minimum absolute value.</span>
 
 </section>
 
@@ -177,8 +177,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-iter-minabs/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-iter-minabs?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stats-iter-minabs.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stats-iter-minabs/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
