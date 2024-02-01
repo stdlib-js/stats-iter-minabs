@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,23 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var isIteratorLike = require( '@stdlib/assert-is-iterator-like' );
-var incrminabs = require( '@stdlib/stats-incr-minabs' );
-var format = require( '@stdlib/string-format' );
-
-
-// MAIN //
+import { Iterator } from '@stdlib/types/iter';
 
 /**
 * Computes the minimum absolute value of all iterated values.
 *
-* @param {Iterator} iterator - input iterator
-* @throws {TypeError} must provide an iterator
-* @returns {(number|null)} minimum absolute value
+* @param iterator - input iterator
+* @returns minimum absolute value
 *
 * @example
 * var runif = require( '@stdlib/random-iter-uniform' );
@@ -44,28 +38,9 @@ var format = require( '@stdlib/string-format' );
 * var m = iterminabs( rand );
 * // returns <number>
 */
-function iterminabs( iterator ) {
-	var acc;
-	var v;
-	if ( !isIteratorLike( iterator ) ) {
-		throw new TypeError( format( 'invalid argument. Must provide an iterator. Value: `%s`.', iterator ) );
-	}
-	acc = incrminabs();
-	while ( true ) {
-		v = iterator.next();
-		if ( v.done ) {
-			break;
-		}
-		if ( typeof v.value === 'number' ) {
-			acc( v.value );
-		} else {
-			acc( NaN );
-		}
-	}
-	return acc();
-}
+declare function iterminabs( iterator: Iterator ): number | null;
 
 
 // EXPORTS //
 
-module.exports = iterminabs;
+export = iterminabs;
