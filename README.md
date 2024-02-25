@@ -50,7 +50,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-minabs@deno/mod.js';
+import iterminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-minabs@v0.2.1-deno/mod.js';
 ```
 
 #### iterminabs( iterator )
@@ -92,7 +92,7 @@ var m = iterminabs( arr );
 
 ```javascript
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import iterminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-minabs@deno/mod.js';
+import iterminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-minabs@v0.2.1-deno/mod.js';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
